@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(251, 97, 1);
+    color: white;
+    padding: 8px;
+    height: 8vh;
+}
+
+.icon-img {
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.address-input {
+    width: 400px;
+    height: 32px;
+    background-color: rgb(251, 97, 1);
+    border-bottom: 3px solid white !important;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.d-none {
+    display: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+.flag-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+
+.menu-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    padding-top: 32px !important;
+    padding-bottom: 0 !important;
+}
+
+.restaurant-name-icons {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    color: rgb(251, 97, 1);
+    padding: 8px;
+}
+
+.rating-stars {
+    width: 100px;
+    object-fit: contain;
+}
+
+
+.food-logo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.restaurant-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid lightgray;
+    position: absolute;
+    top: 60%;
+}
+
+.headline-img {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.shopping-basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(10, 56, 71);
+    border: 2px solid lightgray;
+    border-top: none;
+    position: sticky;
+    top: 0;
+    width: 30%;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.shopping-basket-headline {
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+}
+
+.fill-basket {
+    margin-top: 64px;
+}
+
+.shopping-basket-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.shopping-basket-info {
+    font-size: 13px;
+}
+
+.scroll-bar {
+    background-color: rgb(248, 245, 242);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll-bar-btn {
+    background-color: rgb(248, 245, 242);
+    color: black;
+    text-decoration: none;
+    border: none;
+    padding: 8px;
+    margin-right: 16px;
+    font-size: 13px;
+}
+
+.scroll-bar-btn:hover {
+    background-color: rgb(251, 97, 1);
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+.dishes {
+    background-color: rgb(248, 245, 242);
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding: 8px;
+    height: 32px;
+}
+
+.single-dish {
+    border: 2px solid lightgray;
+    padding: 8px;
+    margin: 16px;
+    position: relative;
+}
+
+.dish-card {
+    display: flex;
+    align-content: flex-end;
+}
+
+.dish-name {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.product-info {
+    color: rgb(18, 95, 202);
+    font-size: 10px;
+    margin: 8px;
+}
+
+.dish-description {
+    color: rgb(117, 117, 117);
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.dish-price {
+    margin-top: 8px;
+    color: rgb(251, 97, 1);
+    font-size: 16px;
+}
+
+.add-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(18, 95, 202);
+    background-color: white;
+    border: 2px solid lightgray;
+    border-top: none;
+    border-right: none;
+    font-size: large;
+}
+
+.basket-price {
+    color: rgb(10, 56, 71);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.basket-btn-box {
+    display: flex;
+    align-items: center;
+}
+
+.basket-btn {
+    color: rgb(18, 95, 202);
+    border: 2px solid rgb(18, 95, 202);
+    border-radius: 2px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.basket-amount {
+    color: rgb(10, 56, 71);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.delete-btn {
+    background-size: cover;
+    background-image: url(img/delete.png);
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 8px;
+}
+
+.cost {
+    color: rgb(10, 56, 71);
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+    width: 100%;
+}
+
+.pay {
+    display: flex;
+    justify-content: center;
+}
+
+.pay-btn {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    height: 32px;
+    background-color: rgb(18, 95, 202);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.pay-success {
+    background-color: rgb(248,245,242);
+    color: rgb(10, 56, 71);
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    margin: 8px;
+}
